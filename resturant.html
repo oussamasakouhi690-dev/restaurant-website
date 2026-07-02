@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast Food Restaurant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#0F0F0F;
+  color:white;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:#111;
+  position:sticky;
+  top:0;
+}
+
+nav h1{
+  color:#E63946;
+}
+
+nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+nav ul li{
+  cursor:pointer;
+  transition:0.3s;
+}
+
+nav ul li:hover{
+  color:#E63946;
+}
+
+.hero{
+  height:90vh;
+  background:url("pizaa.jpg") center/cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h2{
+  font-size:50px;
+  font-weight:800;
+}
+
+.hero p{
+  margin:10px 0;
+  color:#ddd;
+}
+
+.hero button{
+  padding:12px 25px;
+  border:none;
+  margin:10px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.btn1{
+  background:#E63946;
+  color:white;
+}
+
+.btn2{
+  background:#F4A261;
+}
+
+.menu{
+  padding:60px;
+  text-align:center;
+}
+
+.menu h2{
+  margin-bottom:40px;
+  font-size:35px;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#1A1A1A;
+  width:250px;
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin:10px;
+}
+
+.card p{
+  color:#aaa;
+  margin:10px;
+}
+
+.offer{
+  background:#E63946;
+  padding:50px;
+  text-align:center;
+  margin-top:40px;
+}
+
+.offer h2{
+  font-size:30px;
+}
+footer{
+  padding:30px;
+  text-align:center;
+  background:#111;
+  margin-top:30px;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+<nav>
+  <h1>🔥 FoodZone</h1>
+  <ul>
+    <li>Home</li>
+    <li>Menu</li>
+    <li>Offers</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+<section class="hero">
+  <h2>Fresh Pizza & Juicy Burgers</h2>
+  <p>Best fast food in town - delivered in 30 minutes</p>
+  <div>
+    <button class="btn1">Order Now</button>
+    <button class="btn2">View Menu</button>
+  </div>
+</section>
+<section class="menu">
+  <h2>Our Menu</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9">
+      <h3>Pizza</h3>
+      <p>Cheesy & fresh pizza</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+      <h3>Burger</h3>
+      <p>Juicy beef burger</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+      <h3>Fries</h3>
+      <p>Crispy golden fries</p>
+    </div>
+  </div>
+</section>
+<section class="offer">
+  <h2>🔥 Combo Offer: Pizza + Burger + Drink = -20%</h2>
+</section>
+
+<footer>
+  <p>© 2026 FoodZone - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
